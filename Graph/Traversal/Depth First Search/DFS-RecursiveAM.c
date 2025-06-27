@@ -19,10 +19,7 @@ void DFS(int source)
     visited[source] = 1;
     for (int j = 0; j < 7; j++)
     {
-        if (graph[source][j] == 1 && visited[j] == 0)
-        {
-            DFS(j);
-        }
+        if (graph[source][j] == 1 && visited[j] == 0) DFS(j);
     }
 }
 
